@@ -41,7 +41,7 @@ fi
 if [ "$GIT_ACTION" = "save" ]; then
     git add .
     git commit -m "($OS) $CURRENT_TIME"
-    git push -u origin main
+    git push origin main
     echo "Success: Obsidian Vault successfuly saved."
 elif [ "$GIT_ACTION" = "sync" ]; then
     git pull --rebase origin main
